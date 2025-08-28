@@ -754,7 +754,7 @@ do
 							LargeSocial.UIStroke.Color = Styles.Discord.StrokeColor
 							LargeSocial.UIGradient.Color = Styles.Discord.GradColor
 							LargeSocial.ImageLabel.Image = 'rbxassetid://108012241529487'
-							LargeSocial.SocialName.Text = nigga
+							LargeSocial.SocialName.Text = social.Discord
 
 							if not LargeSocial.UIStroke.UIGradient then
 								local strokeGrad = Instance.new('UIGradient', LargeSocial.UIStroke)
