@@ -695,7 +695,7 @@ do
 			for _, social in ipairs(Config.Socials) do
 				table.insert(LoaderConfig.Socials, {
 					Name = social.Name or '@HazemYoriichi';
-					Discord = social.Discord or 'https://discord.gg/bcjzvUHSxM';
+					Discord = social.Discord or 'None';
 					Style = social.Style or "Default";
 					Size = social.Size or "Medium";
 					CopyToClip = social.CopyToClip ~= nil and social.CopyToClip or true;
@@ -821,7 +821,7 @@ do
 							SmallSocial.UIStroke.Color = Styles.GitHub.StrokeColor
 							SmallSocial.UIGradient.Color = Styles.GitHub.GradColor
 
-							SmallSocial.SocialName.Text = 'HazemYoriichi'
+							SmallSocial.SocialName.Text = 'GitHub'
 							SmallSocial.Text.Visible = true
 							SmallSocial.Text.TextColor3 = Color3.fromRGB(90, 90, 90)
 							SmallSocial.Text.Text = '@'..social.Name
