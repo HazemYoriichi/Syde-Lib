@@ -653,7 +653,7 @@ end
 do
 
 	function syde:Load(Config)
-		print('Syde 〡 Loader Loaded')
+		print('BerTox 〡 Loader Loaded')
 		local LOADER = Loader
 		LOADER.Enabled = true
 		LOADER.Parent = coregui
@@ -1052,7 +1052,7 @@ do
 				local inviteCode = discordConfig.Invite
 				local inviteFilePath = discordFolder .. "/" .. inviteCode .. ".txt"
 
-				warn("Syde 〡 Discord AutoJoin enabled. Preparing to send invite:", inviteCode)
+				warn("BerTox 〡 Discord AutoJoin enabled. Preparing to send invite:", inviteCode)
 
 				-- Ensure folder exists
 				if isfolder and not isfolder(discordFolder) then
@@ -1093,7 +1093,7 @@ do
 						end)
 
 						if reqSuccess then
-							print("Syde 〡 Discord invite sent successfully to:", inviteCode)
+							print("BerTox 〡 Discord invite sent successfully to:", inviteCode)
 						else
 							warn("Syde 〡 Failed to send Discord invite:", reqErr)
 						end
