@@ -694,7 +694,7 @@ do
 
 			for _, social in ipairs(Config.Socials) do
 				table.insert(LoaderConfig.Socials, {
-					Name = social.Name or '@HazemYoriichi';
+					Name = social.Name or '@None';
 					Discord = social.Discord or 'None';
 					Style = social.Style or "Default";
 					Size = social.Size or "Medium";
