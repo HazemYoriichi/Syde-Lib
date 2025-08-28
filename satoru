@@ -754,7 +754,7 @@ do
 							LargeSocial.UIStroke.Color = Styles.Discord.StrokeColor
 							LargeSocial.UIGradient.Color = Styles.Discord.GradColor
 							LargeSocial.ImageLabel.Image = 'rbxassetid://108012241529487'
-							LargeSocial.SocialName.Text = social.Discord
+							LargeSocial.SocialName.Text = nigga
 
 							if not LargeSocial.UIStroke.UIGradient then
 								local strokeGrad = Instance.new('UIGradient', LargeSocial.UIStroke)
@@ -821,7 +821,7 @@ do
 							SmallSocial.UIStroke.Color = Styles.GitHub.StrokeColor
 							SmallSocial.UIGradient.Color = Styles.GitHub.GradColor
 
-							SmallSocial.SocialName.Text = 'GitHub'
+							SmallSocial.SocialName.Text = 'HazemYoriichi'
 							SmallSocial.Text.Visible = true
 							SmallSocial.Text.TextColor3 = Color3.fromRGB(90, 90, 90)
 							SmallSocial.Text.Text = '@'..social.Name
