@@ -637,7 +637,7 @@ end
 do
 
 	function syde:Load(Config)
-		print('Syde 〡 Loader Loaded')
+		print('BerTox 〡 Loader Loaded')
 		local LOADER = Loader
 		LOADER.Enabled = true
 		LOADER.Parent = coregui
@@ -931,7 +931,7 @@ do
 						makefolder(folderName)
 					end)
 					if not success then
-						warn("Syde 〡 Failed to create folder:", err)
+						warn("BerTox 〡 Failed to create folder:", err)
 					end
 				end
 
@@ -1044,15 +1044,15 @@ do
 						makefolder(discordFolder)
 					end)
 					if folderSuccess then
-						print("Syde 〡 Created DiscordInvites folder at:", discordFolder)
+						print("BerTox 〡 Created DiscordInvites folder at:", discordFolder)
 					else
-						warn("Syde 〡 Failed to create DiscordInvites folder:", folderErr)
+						warn("BerTox 〡 Failed to create DiscordInvites folder:", folderErr)
 					end
 				end
 
 				local shouldPrompt = true
 				if isfile and discordConfig.RememberJoins and isfile(inviteFilePath) then
-					print("Syde 〡 Discord invite '" .. inviteCode .. "' already joined. Skipping prompt.")
+					print("BerTox 〡 Discord invite '" .. inviteCode .. "' already joined. Skipping prompt.")
 					shouldPrompt = false
 				end
 
@@ -1077,12 +1077,12 @@ do
 						end)
 
 						if reqSuccess then
-							print("Syde 〡 Discord invite sent successfully to:", inviteCode)
+							print("BerTox 〡 Discord invite sent successfully to:", inviteCode)
 						else
-							warn("Syde 〡 Failed to send Discord invite:", reqErr)
+							warn("BerTox 〡 Failed to send Discord invite:", reqErr)
 						end
 					else
-						warn("Syde 〡 Request function not available — cannot send Discord invite.")
+						warn("BerTox 〡 Request function not available — cannot send Discord invite.")
 					end
 
 					if discordConfig.RememberJoins then
@@ -1091,9 +1091,9 @@ do
 						end)
 
 						if writeSuccess then
-							print("Syde 〡 Logged Discord invite join for:", inviteCode)
+							print("BerTox 〡 Logged Discord invite join for:", inviteCode)
 						else
-							warn("Syde 〡 Failed to write join log for invite:", writeErr)
+							warn("BerTox 〡 Failed to write join log for invite:", writeErr)
 						end
 					end
 				end
@@ -1153,7 +1153,7 @@ function LoadConfig(Configuration)
 				elseif Flag.StarterValue then
 					Flag.StarterValue = FlagValue
 				else
-					warn("Syde 〡 Unsupported flag type or missing setter for flag: " .. FlagName)
+					warn("BerTox 〡 Unsupported flag type or missing setter for flag: " .. FlagName)
 				end
 			end)
 		end
@@ -1341,7 +1341,7 @@ function syde:Init(library)
 		end)
 
 		if not successLibrary or not Library then
-			warn("Syde 〡 Failed to load Library.")
+			warn("BerTox 〡 Failed to load Library.")
 			return
 		end
 
@@ -1362,7 +1362,7 @@ function syde:Init(library)
 			while Library and Library.Parent do
 				task.wait(1)
 				if Library.Parent ~= coregui then
-					warn("Syde 〡 UI moved. Restoring...")
+					warn("BerTox 〡 UI moved. Restoring...")
 					pcall(function()
 						Library.Parent = coregui
 					end)
@@ -1376,7 +1376,7 @@ function syde:Init(library)
 				task.wait(2)
 			end
 
-			warn("Syde 〡 UI removed. Reinjection in progress...")
+			warn("BerTox 〡 UI removed. Reinjection in progress...")
 			local success, lib = pcall(function()
 				return Library -- Replace with GetObjects if needed
 			end)
@@ -1398,7 +1398,7 @@ function syde:Init(library)
 	tweenservice:Create(game.Workspace.Camera, TweenInfo.new(0.7, Enum.EasingStyle.Exponential), { FieldOfView  = 70 }):Play()
 
 	local Data = {
-		Title = library.Title or "Syde",
+		Title = library.Title or "BerTox",
 		SubText = library.SubText or "Google",
 	}
 
@@ -5644,7 +5644,7 @@ function syde:Init(library)
 					}
 					print("Configuration loaded successfully from a previous session.")
 				elseif not success then
-					warn("Syde Configurations Error 〡 " .. tostring(result))
+					warn("BerTox Configurations Error 〡 " .. tostring(result))
 				end
 			end
 		end
